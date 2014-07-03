@@ -1,0 +1,6 @@
+Name: Vote ATX
+Description: The Vote ATX application finds voting places based on a user's location.
+Link_URL: http://voteatx.us/
+Code_URL: https://github.com/chip-rosenthal/voteatx
+Type: web service
+Categories: [ elections, politics, voting ]
