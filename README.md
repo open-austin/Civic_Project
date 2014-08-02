@@ -1,4 +1,4 @@
-= Another Freaking Project Directory
+# Another Freaking Project Directory
 
 Directories:
 
@@ -10,3 +10,6 @@ To run, simply type:
 
     rake
 
+This project is still in development. Join the discussion at the project wiki:
+
+https://github.com/chip-rosenthal/afpd/wiki
