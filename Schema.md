@@ -4,6 +4,11 @@ This project is still in development. Join the discussion at the project wiki:
 
 https://github.com/chip-rosenthal/afpd/wiki
 
+This schema incorporates elements and ideas
+proposed by the Civic.JSON project:
+
+https://github.com/BetaNYC/civic.json/blob/master/specification.md
+
 ## Core Data Elements
 
 The following data fields are recognized by the _afpd_ system.
