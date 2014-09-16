@@ -20,13 +20,15 @@ Brief description of project. (Required)
 
 ### project_location
 
-URL where project is posted for use.
+URL where project is posted for use. If the project is a native application,
+this should be the location from where the application can be downloaded
+for installation.
 
 
 ### info_location
 
-URL where information about the project is posted, including possible 
-source code access.
+URL where information about the project is posted. This URL also should
+provide ready access to the project source code, if available.
 
 
 ### type
@@ -66,11 +68,14 @@ Values:
 
 List of keywords or phrases that describes the subject matter of the project.
 
+At this time, a vocabulary for categories has not been identified.
+
 
 ### contacts
 
-List of people who may be contacted for additional information about the
-project. Given as a name with an optional email address in <angle bracketes>.
+List of people who may be contacted for additional information about
+the project. Given as a name with an optional email address in &lt;angle
+bracketes&gt;.
 
 
 ## Prospective Data Elements
