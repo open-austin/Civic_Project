@@ -75,7 +75,7 @@ At this time, a vocabulary for categories has not been identified.
 
 List of people who may be contacted for additional information about
 the project. Given as a name with an optional email address in &lt;angle
-bracketes&gt;.
+brackets&gt;.
 
 
 ## Prospective Data Elements
