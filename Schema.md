@@ -63,6 +63,17 @@ Values:
 * dataset -- Information posted to the web in machine consumable format.
 * document -- Information posted to the web in a human readable format.
 
+Note that the "mobile application" and "desktop application" types are
+reserved for native applications, that are specifically built for the
+target system. They are not intended for use by platform independent
+"web applications".
+
+An open issue is whether this field should be single value or list value.
+At this time, it seems like limiting to a single value that best represents
+the most important function of the project simplifies usage (i.e. a report
+that groups projects by type). Persuasive counter-examples where a list
+value would be beneficial are invited.
+
 
 ### status
 
