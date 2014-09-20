@@ -1,6 +1,8 @@
-Name:         ?
-Description:  ?
-Link_URL:     ?
-Code_URL:     ?
-Type:         ?
+Key:          (identifier, chars: alphanum, underscore, dash)
+Name:         (Project Name, Use Title Capitalization)
+Description:  (one line description, sentence, ending in period)
+Access_at:    (url)
+Project_at:   (url)
+Type:         web application | mobile application | desktop application | web service | website | dataset | document
+Status:       ideation | in development | beta | deployed | archival
 Categories:   [ word, word, word ]

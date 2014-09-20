@@ -1,6 +1,8 @@
+Key: austin-restaurant-scores
 Name: Austin Restaurant Scores
-Description: App to query Austin restaurant scores
-Link_URL: http://open-austin.github.io/atx-restaurant-scores/public/index.html
-Code_URL: https://github.com/open-austin/atx-restaurant-scores
-Type: web service
+Description: Application to query Austin/Travis County Health Department restaurant inspection scores.
+Access_at: http://open-austin.github.io/atx-restaurant-scores/public/index.html
+Project_at: https://github.com/open-austin/atx-restaurant-scores
+Type: web application
+Status: beta
 Categories: [ food safety ]

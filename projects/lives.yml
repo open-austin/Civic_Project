@@ -1,6 +1,8 @@
+Key: lives
 Name: LIVES
 Description: Generate LIVES standard data feed from restaurant inspection scores in Austin, TX.
-Link_URL: http://data.open-austin.org/lives.ci.austin.tx.us.zip
-Code_URL: https://github.com/chip-rosenthal/atx-lives-feed
-Type: data feed
+Access_at: http://data.open-austin.org/lives.ci.austin.tx.us.zip
+Project_at: https://github.com/chip-rosenthal/atx-lives-feed
+Type: dataset
+Status: deployed
 Categories: [ food safety ]

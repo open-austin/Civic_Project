@@ -1,6 +1,8 @@
+Key: austin-recycles
 Name: Austin Recycles
-Description: Application and web service that provides trash and recycling pickup information for the City of Austin.
-Link_URL: http://austin-recycles.open-austin.org/
-Code_URL: https://github.com/open-austin/austin-recycles
-Type: web service
+Description: Application that provides service information for City of Austin trash and recycling pickup.
+Access_at: http://austin-recycles.open-austin.org/
+Project_at: https://github.com/open-austin/austin-recycles
+Type: web application
+Status: in development
 Categories: [ environment, recycle, waste management ]

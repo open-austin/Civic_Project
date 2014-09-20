@@ -1,6 +1,8 @@
+Key: tec-filer
 Name: TEC Filer
-Description: A system for filing campaign finance reports required by the Texas Ethics Commission. Open source and can be deployed anywhere in Texas.
-Link_URL:
-Code_URL: https://github.com/open-austin/tecfiler
-Type: web service
+Description: A system for filing campaign finance reports required by the Texas Ethics Commission.
+Access_at:
+Project_at: https://github.com/open-austin/tecfiler
+Type: web application
+Status: ideation
 Categories: [ elections ]
