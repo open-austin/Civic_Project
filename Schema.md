@@ -33,14 +33,14 @@ Project name. (Required)
 Brief description of project. (Required)
 
 
-### project_location
+### access_at
 
 URL where project is posted for use. If the project is a native application,
 this should be the location from where the application can be downloaded
 for installation.
 
 
-### info_location
+### project_at
 
 URL where information about the project is posted. This URL also should
 provide ready access to the project source code, if available.
