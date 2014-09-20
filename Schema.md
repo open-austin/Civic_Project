@@ -16,11 +16,11 @@ The following data fields are recognized by the _afpd_ system.
 ### key
 
 A unique identifier for this project. Recommend that the identifier be
-limited to lower case letters, numbers, and underscores. The intent
-is to provide a stable, program-friendly identifier for the project.
-If the project data are being sourced from a collection of individual
-files, such as YAML or JSON files, recommend that the files be named
-with this key (plus an extension).
+limited to lower case letters, numbers, dashes, and underscores. The
+intent is to provide a stable, program-friendly identifier for the
+project.  If the project data are being sourced from a collection of
+individual files, such as YAML or JSON files, recommend that the files
+be named with this key (plus an extension).
 
 
 ### name
