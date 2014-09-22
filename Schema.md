@@ -44,13 +44,14 @@ Should be very brief, typically one sentence, ending in a period.
 
 URL where project is posted for use. If the project is a native application,
 this should be the location from where the application can be downloaded
-for installation.
+for installation. *Consider renaming to* **project_url** *-Mateo*
 
 
 ### project_at
 
 URL where information about the project is posted. This URL also should
-provide ready access to the project source code, if available.
+provide ready access to the project source code, if available. 
+*Consider renaming to* **project_info** *or* **project_source** *-Mateo*
 
 
 ### type
@@ -123,9 +124,14 @@ not supported in _afpd_.
 
 ### birthed_at
 
+  *is this a date? or an event/hackathon, etc*
+
 ### geography
 
 ### political_entity
 
 ### needs
 
+### date
+
+  *some type(s) of date field, date_deployed, date_updated, date_status_change -Mateo*
