@@ -123,9 +123,17 @@ not supported in _afpd_.
 
 ### birthed_at
 
+Event where project was initiated.
+
 ### geography
 
 ### political_entity
 
 ### needs
+
+### date_deployed
+
+### date_updated
+
+### date_status_change
 
