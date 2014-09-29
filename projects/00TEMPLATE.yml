@@ -4,4 +4,5 @@ Access_at:    (url)
 Project_at:   (url)
 Type:         web application | mobile application | desktop application | web service | website | dataset | document
 Status:       ideation | in development | beta | deployed | archival
-Categories:   [ word, word, word ]
+Contacts:     [ "email (Name)", ... ]
+Categories:   [ category, ... ]

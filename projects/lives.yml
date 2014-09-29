@@ -4,4 +4,5 @@ Access_at: http://data.open-austin.org/lives.ci.austin.tx.us.zip
 Project_at: https://github.com/chip-rosenthal/atx-lives-feed
 Type: dataset
 Status: deployed
+Contacts: [ hack@open-austin.org ]
 Categories: [ food safety ]
