@@ -20,6 +20,39 @@ module AFPD
       end
     end
 
+    describe ".load_yml" do
+      before(:each) do
+        @a = AFPD::Project.load_yml("#{EXAMPLES_DIR}/austin-restaurant-scores.yml")
+      end
+      it "creates an instance from a YML file" do
+        @a.should be_instance_of AFPD::Project
+      end
+      it "loads the project description from YML" do
+        @a.to_h.should == {
+          :KEY => "austin-restaurant-scores",
+          :NAME => "Austin Restaurant Scores",
+          :DESCRIPTION => "Application to query Austin/Travis County Health Department restaurant inspection scores.",
+          :ACCESS_AT => "http://open-austin.github.io/atx-restaurant-scores/public/index.html",
+          :PROJECT_AT => "https://github.com/open-austin/atx-restaurant-scores",
+          :TYPE => "web application",
+          :STATUS => "beta",
+          :CATEGORIES => [ "food safety" ],
+          :CONTACTS => [ "hack@open-austin.org" ],
+        }
+      end
+    end
+
+    describe ".load_dir" do
+      before(:each) do
+        @a = AFPD::Project.load_dir(EXAMPLES_DIR)
+      end
+      it "returns a list of project descriptions" do
+        @a.should be_instance_of Array
+        @a.length.should be 2
+        @a[0].should be_instance_of AFPD::Project
+      end
+    end
+
     describe ".canonicalize_key" do
       it "produces a canonical field key" do
         v = AFPD::Project.canonicalize_key("description")
@@ -159,6 +192,15 @@ module AFPD
         expect do
           @a[:KEY] = nil
         end.to raise_error(ValidationError)
+      end
+    end
+
+    describe ".to_h" do
+      before(:each) do
+        @a = AFPD::Project.new("key" => "key", "name" => "name", "description" => "description")
+      end
+      it "returns values as a hash" do
+        @a.to_h.should == {:KEY => "key", :NAME => "name", :DESCRIPTION => "description"}
       end
     end
 

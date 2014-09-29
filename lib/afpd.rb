@@ -9,7 +9,7 @@ module AFPD
     :TYPE => {:TYPE => :SCALAR, :VALUES => ["web application", "mobile application", "desktop application", "web service", "website", "dataset", "document"]},
     :STATUS => {:TYPE => :SCALAR, :VALUES => ["ideation", "in development", "beta", "deployed", "archival"]},
     :CATEGORIES => {:TYPE => :LIST},
-    :CONTACT => {:TYPE => :LIST},
+    :CONTACTS => {:TYPE => :LIST},
   }.freeze
 
   class ValidationError < RuntimeError
@@ -33,6 +33,20 @@ module AFPD
         end
       end
     end
+
+
+    def self.load_yml(filename)
+      require "yaml"
+      a = YAML.load_file(filename)
+      key = File.basename(filename, ".yml")
+      new(a.to_h.merge(:KEY => key))
+    end
+
+
+    def self.load_dir(dirname)
+      Dir["#{dirname}/*.yml"].map {|filename| load_yml(filename)}
+    end
+
 
     # Convert a field name (such as "Description") to a canonicalized, symbolic value (such as :DESCRIPTION)
     def self.canonicalize_key(field)
@@ -112,8 +126,8 @@ module AFPD
       @fields[key] = value
     end
 
-    def load_yml(filename)
-      # TODO
+    def to_h
+      @fields.freeze
     end
 
   end
