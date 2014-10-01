@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require "erb"
+include ERB::Util # for h()
+
+BASE_DIR = "#{File.dirname($0)}/.."
+$LOAD_PATH << "#{BASE_DIR}/lib"
+require "afpd.rb"
+PROJECTS_DIR = "#{BASE_DIR}/projects"
+
+@template = File.read("#{BASE_DIR}/lib/afpd/projects.erb")
+@projects = AFPD::Project.load_dir(PROJECTS_DIR)
+
+class ProjectContainer
+  attr_accessor :projects
+  def initialize(projects)
+    @projects = projects
+  end
+  def get_binding
+    binding()
+  end
+end
+
+p = ProjectContainer.new(@projects)
+puts ERB.new(@template, 0, "<>").result(p.get_binding)
+

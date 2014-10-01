@@ -1,15 +1,41 @@
 module AFPD
 
-  VALIDATIONS = {
+  # Valid :TYPE values.
+  # Ordering here used by the <=> operator.
+  #
+  VALID_TYPES = [
+    "web application",
+    "mobile application",
+    "desktop application",
+    "website",
+    "document",
+    "web service",
+    "dataset",
+  ].freeze
+
+  # Valid :STATUS values.
+  # Ordering here used by the <=> operator.
+  #
+  VALID_STATUSES = [
+    "deployed",
+    "beta",
+    "in development",
+    "ideation",
+    "archival",
+  ].freeze
+
+  # Definition of data fields, and validations that will be performed against values.
+  #
+  FIELDS = {
     :KEY => {:REQUIRED => true, :TYPE => :SCALAR},
     :NAME => {:REQUIRED => true, :TYPE => :SCALAR},
-    :DESCRIPTION => {:REQUIRED => true, :TYPE => :SCALAR},
+    :DESCRIPTION => {:REQUIRED => true, :TYPE => :SCALAR, :MATCHES => %r{\.$}},
     :ACCESS_AT => {:TYPE => :SCALAR, :MATCHES => %r{^https?://}},
     :PROJECT_AT => {:TYPE => :SCALAR, :MATCHES => %r{^https?://}},
-    :TYPE => {:TYPE => :SCALAR, :VALUES => ["web application", "mobile application", "desktop application", "web service", "website", "dataset", "document"]},
-    :STATUS => {:TYPE => :SCALAR, :VALUES => ["ideation", "in development", "beta", "deployed", "archival"]},
+    :TYPE => {:REQUIRED => true, :TYPE => :SCALAR, :VALUES => VALID_TYPES},
+    :STATUS => {:REQUIRED => true, :TYPE => :SCALAR, :VALUES => VALID_STATUSES},
     :CATEGORIES => {:TYPE => :LIST},
-    :CONTACTS => {:TYPE => :LIST},
+    :CONTACT => {:TYPE => :SCALAR},
   }.freeze
 
   class ValidationError < RuntimeError
@@ -23,7 +49,7 @@ module AFPD
         self[field] = value
       end
 
-      VALIDATIONS.each do |field, validations|
+      FIELDS.each do |field, validations|
         is_required = validations[:REQUIRED]
         if is_required
           value = self[field]
@@ -44,7 +70,7 @@ module AFPD
 
 
     def self.load_dir(dirname)
-      a = Dir["#{dirname}/*.yml"].map {|filename| load_yml(filename)}
+      a = Dir["#{dirname}/*.yml"].map {|filename| load_yml(filename)}.sort
       raise "no project files found in directory \"#{dirname}\"" if a.empty?
       a
     end
@@ -53,7 +79,7 @@ module AFPD
     # Convert a field name (such as "Description") to a canonicalized, symbolic value (such as :DESCRIPTION)
     def self.canonicalize_key(field)
       key = field.to_s.upcase.to_sym
-      raise ValidationError, "unknown field \"#{field}\"" unless VALIDATIONS.include?(key)
+      raise ValidationError, "unknown field \"#{field}\"" unless FIELDS.include?(key)
       key
     end
 
@@ -120,29 +146,47 @@ module AFPD
 
     def []=(field, value)
       key = self.class.canonicalize_key(field)
-      validations = VALIDATIONS[key]
-
-      # coerce scalar value to array if needed
-      if validations[:TYPE] == :LIST
-        case value
-        when Array
-        when NilClass
-          # nop
-        else
-          value = [value]
-        end
-      end
-
       begin
-        self.class.validate_value!(value, validations)
+        self.class.validate_value!(value, FIELDS[key])
       rescue ValidationError => e
         raise ValidationError, "#{e} for field #{field}"
       end
       @fields[key] = value
     end
 
+    def is_type?(type)
+      self[:TYPE] == type.downcase
+    end
+
+    def is_status?(status)
+      self[:STATUS] == status.downcase
+    end
+
+    def type_index
+      VALID_TYPES.find_index(self[:TYPE])
+    end
+
+    def status_index
+      VALID_STATUSES.find_index(self[:STATUS])
+    end
+
     def to_h
       @fields.freeze
+    end
+
+    def <=>(b)
+
+      a1 = self.type_index || 9999
+      b1 = b.type_index || 9999
+      c = (a1 <=> b1)
+      return c unless c == 0
+
+      a1 = self.status_index || 9999
+      b1 = b.status_index || 9999
+      c = (a1 <=> b1)
+      return c unless c == 0
+
+      self[:NAME] <=> b[:NAME]
     end
 
   end

@@ -1,0 +1,31 @@
+<!--
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+-->
+<style type="text/css">
+.projects .project-type { background: #eef; padding: 1px 3px; border: solid #88f 1px; border-radius: 5px; }
+.projects .project-status { background: #efe; padding: 1px 3px; border: solid #8f8 1px; border-radius: 5px; }
+.projects .project-info { background: #f8f8f8; padding: 1px 3px; border: solid #888 1px; border-radius: 5px; }
+.projects li {margin: 0.5em 0;}
+</style>
+<% curr_type = nil %>
+<% projects.each do |proj| %>
+<% if curr_type != proj[:TYPE] %>
+<% unless curr_type.nil? %>
+</ul>
+<% end %>
+<h2><%= h(proj[:TYPE].split.map {|s| s.capitalize}.join(' ')) %></h2>
+<ul class="projects">
+<% curr_type = proj[:TYPE] ; end %>
+<li><a href="<%= h(proj[:ACCESS_AT]) %>"><%= h(proj[:NAME]) %></a> &ndash; <%= h(proj[:DESCRIPTION]) %>
+<!--
+<span class="project-type project-type-<%= h(proj[:TYPE].gsub(/\s+/, '_')) %>"><%= h(proj[:TYPE]) %></span>
+-->
+<span class="project-status project-status-<%= h(proj[:STATUS].gsub(/\s+/, '_')) %>"><%= h(proj[:STATUS]) %></span>
+<% unless proj[:PROJECT_AT].nil? || proj[:PROJECT_AT].empty? %>
+<span class="project-info"><a href="<%= h(proj[:PROJECT_AT]) %>" class="project-project-at">project info</a></span>
+<% end %>
+</li>
+<% end %>
+<% unless curr_type.nil? %>
+</ul>
+<% end %>

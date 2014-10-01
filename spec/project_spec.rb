@@ -3,19 +3,27 @@ require './spec_helper.rb'
 module AFPD
   describe Project do
 
+    EXAMPLE_ATTRS = {
+      :KEY => "project_key",
+      :NAME => "Project Name",
+      :DESCRIPTION => "This is a description of the project.",
+      :TYPE => "web application",
+      :STATUS => "in development",
+    }.freeze
+
     describe ".new" do
       it "creates an instance" do
-        a = AFPD::Project.new("key" => "key", "name" => "name", "description" => "description")
+        a = AFPD::Project.new(EXAMPLE_ATTRS)
         a.should be_instance_of AFPD::Project
       end
       it "fails when required arguments are missing" do
         expect do
-          AFPD::Project.new("key" => "key", "name" => "name")
+          AFPD::Project.new(EXAMPLE_ATTRS.merge("key" => nil))
         end.to raise_error(ValidationError)
       end
       it "fails when bad values are specified" do
         expect do
-          AFPD::Project.new("key" => "key", "name" => "name", "description" => "description", "status" => "cupcakes")
+          AFPD::Project.new(EXAMPLE_ATTRS.merge("status" => "cupcakes"))
         end.to raise_error(ValidationError)
       end
     end
@@ -37,7 +45,7 @@ module AFPD
           :TYPE => "web application",
           :STATUS => "beta",
           :CATEGORIES => [ "food safety" ],
-          :CONTACTS => [ "hack@open-austin.org" ],
+          :CONTACT => "hack@open-austin.org",
         }
       end
     end
@@ -164,24 +172,24 @@ module AFPD
 
     end # describe ".validate_value!" 
 
-    describe ".get value" do
+    describe "#[]" do
       before(:each) do
-        @a = AFPD::Project.new("key" => "key", "name" => "name", "description" => "description")
+        @a = AFPD::Project.new(EXAMPLE_ATTRS)
       end
       it "returns initialized value" do
-        @a[:KEY].should == "key"
+        @a[:KEY].should == "project_key"
       end
       it "properly canonicalizes the field name" do
-        @a["Key"].should == "key"
+        @a["Key"].should == "project_key"
       end
       it "returns nil for uninitialized value" do
-        @a[:STATUS].should be nil
+        @a[:ACCESS_AT].should be nil
       end
     end
 
-    describe ".set value" do
+    describe "#[]=" do
       before(:each) do
-        @a = AFPD::Project.new("key" => "key", "name" => "name", "description" => "description")
+        @a = AFPD::Project.new(EXAMPLE_ATTRS)
       end
       it "should set a value" do
         @a[:KEY] = "changed"
@@ -196,18 +204,80 @@ module AFPD
           @a[:KEY] = nil
         end.to raise_error(ValidationError)
       end
-      it "coerces a scalar value to array, if needed" do
-        @a[:CATEGORIES] = "testing"
-        @a[:CATEGORIES].should == ["testing"]
+    end
+
+    describe "#is_type?" do
+      before(:each) do
+        @a = AFPD::Project.new(EXAMPLE_ATTRS)
+      end
+      it "accepts same type" do
+        @a.is_type?("web application").should be true
+      end
+      it "is case independent" do
+        @a.is_type?("Web Application").should be true
+      end
+      it "rejects different type" do
+        @a.is_type?("desktop application").should be false
       end
     end
 
-    describe ".to_h" do
+    describe "#is_status?" do
       before(:each) do
-        @a = AFPD::Project.new("key" => "key", "name" => "name", "description" => "description")
+        @a = AFPD::Project.new(EXAMPLE_ATTRS)
+      end
+      it "accepts same status" do
+        @a.is_status?("in development").should be true
+      end
+      it "is case independent" do
+        @a.is_status?("In Development").should be true
+      end
+      it "rejects different status" do
+        @a.is_status?("beta").should be false
+      end
+    end
+
+    describe "#type_index" do
+      before(:each) do
+        @a = AFPD::Project.new(EXAMPLE_ATTRS)
+      end
+      it "returns position into VALID_TYPES of type" do
+        idx = @a.type_index
+        @a[:TYPE].should == AFPD::VALID_TYPES[idx]
+      end
+    end
+
+    describe "#status_index" do
+      before(:each) do
+        @a = AFPD::Project.new(EXAMPLE_ATTRS)
+      end
+      it "returns position into VALID_STATUSES of status" do
+        idx = @a.status_index
+        @a[:STATUS].should == AFPD::VALID_STATUSES[idx]
+      end
+    end
+
+    describe "#to_h" do
+      before(:each) do
+        @a = AFPD::Project.new(EXAMPLE_ATTRS)
       end
       it "returns values as a hash" do
-        @a.to_h.should == {:KEY => "key", :NAME => "name", :DESCRIPTION => "description"}
+        @a.to_h.should == EXAMPLE_ATTRS
+      end
+    end
+
+    describe "#<=>" do
+      before(:each) do
+        @a = AFPD::Project.new(EXAMPLE_ATTRS.merge(:NAME => "aaaa"))
+        @b = AFPD::Project.new(EXAMPLE_ATTRS.merge(:NAME => "bbbb"))
+      end
+      it "returns 0 when node is compared to itself" do
+        (@a <=> @a).should be 0
+      end
+      it "returns -1 when smaller node is compared to larger node" do
+        (@a <=> @b).should be -1
+      end
+      it "returns 1 when larger node is compared to smaller node" do
+        (@b <=> @a).should be 1
       end
     end
 

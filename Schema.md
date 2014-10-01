@@ -104,11 +104,11 @@ List of keywords or phrases that describes the subject matter of the project.
 At this time, a vocabulary for categories has not been identified.
 
 
-### contacts
+### contact
 
-List of people who may be contacted for additional information about
-the project. Given as a name with an optional email address in &lt;angle
-brackets&gt;.
+Person (name and email address) who is the primary contact for this entry.
+Public contact information for the project should be published at the
+"project_at" location.
 
 
 ## Prospective Data Elements
