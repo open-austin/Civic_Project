@@ -1,0 +1,68 @@
+<style type="text/css">
+.projects .project-type { background: #eef; padding: 1px 3px; border: solid #88f 1px; border-radius: 5px; }
+.projects .project-status { background: #efe; padding: 1px 3px; border: solid #8f8 1px; border-radius: 5px; }
+.projects .project-info { background: #f8f8f8; padding: 1px 3px; border: solid #888 1px; border-radius: 5px; }
+.projects li {margin: 0.5em 0;}
+</style>
+<h2>Web Application</h2>
+<ul class="projects">
+<li><a href="http://open-austin.github.io/hack-task-aggregator/public/index.html">Hack Task Aggregator</a> &ndash; Application to aggregate tasks across projects that are identified for &quot;hacking&quot;.
+<!--
+<span class="project-type project-type-web_application">web application</span>
+-->
+<span class="project-status project-status-deployed">deployed</span>
+<span class="project-info"><a href="https://github.com/open-austin/hack-task-aggregator" class="project-project-at">project info</a></span>
+</li>
+<li><a href="http://metrorappid.com">MetroRappid</a> &ndash; Realtime map of Austin&#39;s MetroRapid and MetroRail routes.
+<!--
+<span class="project-type project-type-web_application">web application</span>
+-->
+<span class="project-status project-status-deployed">deployed</span>
+<span class="project-info"><a href="https://github.com/luqmaan/metrorappid" class="project-project-at">project info</a></span>
+</li>
+<li><a href="http://voteatx.us/">Vote ATX</a> &ndash; Voting place finder for Austin/Travis County elections.
+<!--
+<span class="project-type project-type-web_application">web application</span>
+-->
+<span class="project-status project-status-deployed">deployed</span>
+<span class="project-info"><a href="https://github.com/chip-rosenthal/voteatx" class="project-project-at">project info</a></span>
+</li>
+<li><a href="http://open-austin.github.io/atx-restaurant-scores/public/index.html">Austin Restaurant Scores</a> &ndash; Application to query Austin/Travis County Health Department restaurant inspection scores.
+<!--
+<span class="project-type project-type-web_application">web application</span>
+-->
+<span class="project-status project-status-beta">beta</span>
+<span class="project-info"><a href="https://github.com/open-austin/atx-restaurant-scores" class="project-project-at">project info</a></span>
+</li>
+<li><a href="http://austin-recycles.open-austin.org/">Austin Recycles</a> &ndash; Application that provides service information for City of Austin trash and recycling pickup.
+<!--
+<span class="project-type project-type-web_application">web application</span>
+-->
+<span class="project-status project-status-in_development">in development</span>
+<span class="project-info"><a href="https://github.com/open-austin/austin-recycles" class="project-project-at">project info</a></span>
+</li>
+<li><a href="">TEC Filer</a> &ndash; A system for filing campaign finance reports required by the Texas Ethics Commission.
+<!--
+<span class="project-type project-type-web_application">web application</span>
+-->
+<span class="project-status project-status-ideation">ideation</span>
+<span class="project-info"><a href="https://github.com/open-austin/tecfiler" class="project-project-at">project info</a></span>
+</li>
+<li><a href="http://bike-buddy.open-austin.org/">Bike Buddy</a> &ndash; Connecting people who want to try bicycle commuting with experienced bicycle commuters who want to help. A May 2013 Austin Bike Month initiative. Created as a public service by Open Austin.
+<!--
+<span class="project-type project-type-web_application">web application</span>
+-->
+<span class="project-status project-status-archival">archival</span>
+<span class="project-info"><a href="https://github.com/chip-rosenthal/bike-buddy" class="project-project-at">project info</a></span>
+</li>
+</ul>
+<h2>Dataset</h2>
+<ul class="projects">
+<li><a href="http://data.open-austin.org/lives.ci.austin.tx.us.zip">LIVES</a> &ndash; Generate LIVES standard data feed from restaurant inspection scores in Austin, TX.
+<!--
+<span class="project-type project-type-dataset">dataset</span>
+-->
+<span class="project-status project-status-deployed">deployed</span>
+<span class="project-info"><a href="https://github.com/chip-rosenthal/atx-lives-feed" class="project-project-at">project info</a></span>
+</li>
+</ul>

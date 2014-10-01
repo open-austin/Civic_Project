@@ -1,9 +1,0 @@
-name,description,link_url,code_url,type,categories
-Austin Recycles,Application that provides service information for City of Austin trash and recycling pickup.,,,web application,"environment, recycle, waste management"
-Austin Restaurant Scores,Application to query Austin/Travis County Health Department restaurant inspection scores.,,,web application,food safety
-Bike Buddy,Connecting people who want to try bicycle commuting with experienced bicycle commuters who want to help. A May 2013 Austin Bike Month initiative. Created as a public service by Open Austin.,,,web application,"transporation, bicycling"
-Hack Task Aggregator,"Application to aggregate tasks across projects that are identified for ""hacking"".",,,web application,"project management, civic hacking"
-LIVES,"Generate LIVES standard data feed from restaurant inspection scores in Austin, TX.",,,dataset,food safety
-MetroRappid,Realtime map of Austin's MetroRapid and MetroRail routes,,,web application,"transit, transportation, bus, train"
-TEC Filer,A system for filing campaign finance reports required by the Texas Ethics Commission.,,,web application,elections
-Vote ATX,Voting place finder for Austin/Travis County elections.,,,web application,"elections, politics, voting"
