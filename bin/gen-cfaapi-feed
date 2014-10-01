@@ -1,0 +1,51 @@
+#!/usr/bin/env ruby
+
+require 'csv'
+
+BASE_DIR = "#{File.dirname($0)}/.."
+$LOAD_PATH << "#{BASE_DIR}/lib"
+require "afpd.rb"
+PROJECTS_DIR = "#{BASE_DIR}/projects"
+PUB_DIR = "#{BASE_DIR}/pub"
+
+projects = AFPD::Project.load_dir(PROJECTS_DIR)
+
+COL_TITLES = [
+  'name',
+  'description',
+  'link_url',
+  'code_url',
+  'type',
+  'categories',
+]
+
+COL_KEYS = [
+  :NAME,
+  :DESCRIPTION,
+  :ACCESS_AT,
+  :PROJECT_AT,
+  :TYPE,
+  :CATEGORIES,
+]
+
+# Only include projects that might be of interest to an end user
+# Possible :TYPE values - "web application", "mobile application", "desktop application", "web service", "website", "dataset", "document"
+#
+WANTED_TYPES = ["web application", "mobile application", "desktop application", "website", "document"]
+
+# Only include projects with a STATUS value that indicates it's fairly usable.
+# Possible :STATUS values - "ideation", "in development", "beta", "deployed", "archival"
+#
+WANTED_STATUSES = ["beta", "deployed"]
+
+def coerce_to_array(*args)
+  [args].flatten
+end
+
+puts COL_TITLES.to_csv
+projects.each do |proj|
+  next unless WANTED_STATUSES.include?(proj[:STATUS])
+  next unless WANTED_TYPES.include?(proj[:TYPE])
+  puts COL_KEYS.map {|key| proj[key]}.map{|value| value.kind_of?(Array) ? value.join(",") : value}.to_csv
+end
+

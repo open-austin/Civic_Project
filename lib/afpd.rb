@@ -44,7 +44,9 @@ module AFPD
 
 
     def self.load_dir(dirname)
-      Dir["#{dirname}/*.yml"].map {|filename| load_yml(filename)}
+      a = Dir["#{dirname}/*.yml"].map {|filename| load_yml(filename)}
+      raise "no project files found in directory \"#{dirname}\"" if a.empty?
+      a
     end
 
 
@@ -118,8 +120,21 @@ module AFPD
 
     def []=(field, value)
       key = self.class.canonicalize_key(field)
+      validations = VALIDATIONS[key]
+
+      # coerce scalar value to array if needed
+      if validations[:TYPE] == :LIST
+        case value
+        when Array
+        when NilClass
+          # nop
+        else
+          value = [value]
+        end
+      end
+
       begin
-        self.class.validate_value!(value, VALIDATIONS[key])
+        self.class.validate_value!(value, validations)
       rescue ValidationError => e
         raise ValidationError, "#{e} for field #{field}"
       end

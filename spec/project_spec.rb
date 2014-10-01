@@ -43,13 +43,16 @@ module AFPD
     end
 
     describe ".load_dir" do
-      before(:each) do
-        @a = AFPD::Project.load_dir(EXAMPLES_DIR)
-      end
       it "returns a list of project descriptions" do
+        @a = AFPD::Project.load_dir(EXAMPLES_DIR)
         @a.should be_instance_of Array
         @a.length.should be 2
         @a[0].should be_instance_of AFPD::Project
+      end
+      it "fails if no project specs found" do
+        expect do
+          AFPD::Project.load_dir("/no/yml/files/here")
+        end.to raise_error(RuntimeError)
       end
     end
 
@@ -192,6 +195,10 @@ module AFPD
         expect do
           @a[:KEY] = nil
         end.to raise_error(ValidationError)
+      end
+      it "coerces a scalar value to array, if needed" do
+        @a[:CATEGORIES] = "testing"
+        @a[:CATEGORIES].should == ["testing"]
       end
     end
 
