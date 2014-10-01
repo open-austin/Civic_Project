@@ -1,8 +1,4 @@
-# Another Freaking Project Directory -- Data Schema
-
-This project is still in development. Join the discussion at the project wiki:
-
-https://github.com/chip-rosenthal/afpd/wiki
+# Civic Project -- Data Schema
 
 This schema incorporates elements and ideas
 proposed by the Civic.JSON project:
@@ -11,7 +7,7 @@ https://github.com/BetaNYC/civic.json/blob/master/specification.md
 
 ## Core Data Elements
 
-The following data fields are recognized by the _afpd_ system.
+The following data fields are recognized by the _Civic_ _Project_ system.
 
 ### key
 
@@ -117,7 +113,7 @@ The following data elements are currently not supported, but might be
 considered for a future implementation.
 
 Included are fields from the BetaNYC _civic.json_ spec that are currently
-not supported in _afpd_.
+not supported in _Civic_ _Project_.
 
 ### thumbnail_url
 

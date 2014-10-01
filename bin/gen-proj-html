@@ -5,11 +5,11 @@ include ERB::Util # for h()
 
 BASE_DIR = "#{File.dirname($0)}/.."
 $LOAD_PATH << "#{BASE_DIR}/lib"
-require "afpd.rb"
+require "civic_project.rb"
 PROJECTS_DIR = "#{BASE_DIR}/projects"
 
-@template = File.read("#{BASE_DIR}/lib/afpd/projects.erb")
-@projects = AFPD::Project.load_dir(PROJECTS_DIR)
+@template = File.read("#{BASE_DIR}/lib/civic_project/projects.erb")
+@projects = CivicProject.load_dir(PROJECTS_DIR)
 
 class ProjectContainer
   attr_accessor :projects

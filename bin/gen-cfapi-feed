@@ -4,11 +4,11 @@ require 'csv'
 
 BASE_DIR = "#{File.dirname($0)}/.."
 $LOAD_PATH << "#{BASE_DIR}/lib"
-require "afpd.rb"
+require "civic_project.rb"
 PROJECTS_DIR = "#{BASE_DIR}/projects"
 PUB_DIR = "#{BASE_DIR}/pub"
 
-projects = AFPD::Project.load_dir(PROJECTS_DIR)
+projects = CivicProject.load_dir(PROJECTS_DIR)
 
 # Only include projects that might be of interest to an end user
 #
