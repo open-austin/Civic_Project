@@ -1,28 +1,30 @@
 <style type="text/css">
-.projects .project-type { background: #eef; padding: 1px 3px; border: solid #88f 1px; border-radius: 5px; }
-.projects .project-status { background: #efe; padding: 1px 3px; border: solid #8f8 1px; border-radius: 5px; }
-.projects .project-info { background: #f8f8f8; padding: 1px 3px; border: solid #888 1px; border-radius: 5px; }
-.projects li {margin: 0.5em 0;}
+  .projects .project-type { background: #eef; padding: 1px 3px; border: solid #88f 1px; border-radius: 5px; }
+  .projects .project-status { background: #efe; padding: 1px 3px; border: solid #8f8 1px; border-radius: 5px; }
+  .projects .project-info { font-style: italic; zbackground: #f8f8f8; zpadding: 1px 3px; zborder: solid #888 1px; zborder-radius: 5px; }
 </style>
 <% curr_type = nil %>
 <% projects.each do |proj| %>
-<% if curr_type != proj[:TYPE] %>
+  <% if curr_type != proj[:TYPE] %>
+    <% unless curr_type.nil? %>
+      </ul>
+    <% end %>
+    <h2><%= h(proj[:TYPE].split.map {|s| s.capitalize}.join(' ')) %></h2>
+    <ul class="projects">
+  <% curr_type = proj[:TYPE] ; end %>
+  <li>
+  <% if proj[:ACCESS_AT].nil? || proj[:ACCESS_AT].empty? %>
+    <%= h(proj[:NAME]) %>
+  <% else %>
+    <a href="<%= h(proj[:ACCESS_AT]) %>"><%= h(proj[:NAME]) %></a>
+  <% end %>
+  &ndash; <%= h(proj[:DESCRIPTION]) %>
+  <% unless proj[:PROJECT_AT].nil? || proj[:PROJECT_AT].empty? %>
+    <span class="project-info">[<a href="<%= h(proj[:PROJECT_AT]) %>" class="project-project-at">more info</a>]</span>
+  <% end %>
+  <span class="project-status project-status-<%= h(proj[:STATUS].gsub(/\s+/, '_')) %>"><%= h(proj[:STATUS]) %></span>
+  </li>
+<% end %>
 <% unless curr_type.nil? %>
-</ul>
-<% end %>
-<h2><%= h(proj[:TYPE].split.map {|s| s.capitalize}.join(' ')) %></h2>
-<ul class="projects">
-<% curr_type = proj[:TYPE] ; end %>
-<li><a href="<%= h(proj[:ACCESS_AT]) %>"><%= h(proj[:NAME]) %></a> &ndash; <%= h(proj[:DESCRIPTION]) %>
-<!--
-<span class="project-type project-type-<%= h(proj[:TYPE].gsub(/\s+/, '_')) %>"><%= h(proj[:TYPE]) %></span>
--->
-<span class="project-status project-status-<%= h(proj[:STATUS].gsub(/\s+/, '_')) %>"><%= h(proj[:STATUS]) %></span>
-<% unless proj[:PROJECT_AT].nil? || proj[:PROJECT_AT].empty? %>
-<span class="project-info"><a href="<%= h(proj[:PROJECT_AT]) %>" class="project-project-at">project info</a></span>
-<% end %>
-</li>
-<% end %>
-<% unless curr_type.nil? %>
-</ul>
+  </ul>
 <% end %>
