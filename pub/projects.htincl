@@ -36,7 +36,7 @@
   
   &ndash; Voting place finder for Austin/Travis County elections.
   
-    <span class="project-info">[<a href="https://github.com/chip-rosenthal/voteatx" class="project-project-at">more info</a>]</span>
+    <span class="project-info">[<a href="https://github.com/open-austin/voteatx-app" class="project-project-at">more info</a>]</span>
   
   <span class="project-status project-status-deployed">deployed</span>
   </li>
@@ -45,7 +45,7 @@
   
     <a href="http://open-austin.github.io/atx-restaurant-scores/public/index.html">Austin Restaurant Scores</a>
   
-  &ndash; Application to query Austin/Travis County Health Department restaurant inspection scores.
+  &ndash; Query Austin/Travis County Health Department restaurant inspection scores.
   
     <span class="project-info">[<a href="https://github.com/open-austin/atx-restaurant-scores" class="project-project-at">more info</a>]</span>
   
@@ -65,6 +65,17 @@
   
   <li>
   
+    311 vs 10-1
+  
+  &ndash; Visualization of 311 service calls broken down by 10-1 city council district.
+  
+    <span class="project-info">[<a href="https://github.com/mateoclarke/311vs10One" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-ideation">ideation</span>
+  </li>
+  
+  <li>
+  
     TEC Filer
   
   &ndash; A system for filing campaign finance reports required by the Texas Ethics Commission.
@@ -78,11 +89,80 @@
   
     <a href="http://bike-buddy.open-austin.org/">Bike Buddy</a>
   
-  &ndash; Connecting people who want to try bicycle commuting with experienced bicycle commuters who want to help. A May 2013 Austin Bike Month initiative. Created as a public service by Open Austin.
+  &ndash; Connecting people who want to try bicycle commuting with experienced bicycle commuters who want to help. A May 2013 Austin Bike Month initiative.
   
     <span class="project-info">[<a href="https://github.com/chip-rosenthal/bike-buddy" class="project-project-at">more info</a>]</span>
   
   <span class="project-status project-status-archival">archival</span>
+  </li>
+  
+    
+      </ul>
+    
+    <h2>Desktop Application</h2>
+    <ul class="projects">
+  
+  <li>
+  
+    District Enricher
+  
+  &ndash; Enrich an existing dataset with city council district information.
+  
+    <span class="project-info">[<a href="https://github.com/chip-rosenthal/district-enricher" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-ideation">ideation</span>
+  </li>
+  
+    
+      </ul>
+    
+    <h2>Website</h2>
+    <ul class="projects">
+  
+  <li>
+  
+    <a href="http://atxdataportal.wikispaces.com/">How to Use the City of Austin Open Data Portal</a>
+  
+  &ndash; &quot;How-To&quot; tutorials that show basic and common tasks on the City of Austin Open Data Portal.
+  
+  <span class="project-status project-status-deployed">deployed</span>
+  </li>
+  
+  <li>
+  
+    <a href="http://data.open-austin.org/">Open Austin Data Portal</a>
+  
+  &ndash; Data published by Open Austin.
+  
+  <span class="project-status project-status-deployed">deployed</span>
+  </li>
+  
+  <li>
+  
+    <a href="https://twitter.com/CutePetsAustin">Cute Pets Austin</a>
+  
+  &ndash; A &quot;Twitter bot&quot; that posts a random adoptable pet from the Austin Animal Center.
+  
+    <span class="project-info">[<a href="https://github.com/open-austin/CutePetsAustin" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-beta">beta</span>
+  </li>
+  
+    
+      </ul>
+    
+    <h2>Document</h2>
+    <ul class="projects">
+  
+  <li>
+  
+    <a href="http://data.open-austin.org/data-catalogs/views/by-department.html">Open Gov Datasets by Department/Category</a>
+  
+  &ndash; Report on datasets published on the City of Austin Open Data portal, updated nightly.
+  
+    <span class="project-info">[<a href="https://github.com/chip-rosenthal/pull-data-portal-catalog" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-deployed">deployed</span>
   </li>
   
     
@@ -93,9 +173,20 @@
   
   <li>
   
+    <a href="https://www.open-austin.org/hack-team/projects">Civic Project</a>
+  
+  &ndash; Registry of civic projects produced by Open Austin participants.
+  
+    <span class="project-info">[<a href="https://github.com/open-austin/Civic_Project" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-deployed">deployed</span>
+  </li>
+  
+  <li>
+  
     <a href="http://data.open-austin.org/lives.ci.austin.tx.us.zip">LIVES</a>
   
-  &ndash; Generate LIVES standard data feed from restaurant inspection scores in Austin, TX.
+  &ndash; Data feed of restaurant inspection scores for Austin/Travis County in LIVES format.
   
     <span class="project-info">[<a href="https://github.com/chip-rosenthal/atx-lives-feed" class="project-project-at">more info</a>]</span>
   

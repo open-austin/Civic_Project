@@ -1,0 +1,8 @@
+Name:         Open Gov Datasets by Department/Category
+Description:  Report on datasets published on the City of Austin Open Data portal, updated nightly.
+Access_at:    http://data.open-austin.org/data-catalogs/views/by-department.html
+Project_at:   https://github.com/chip-rosenthal/pull-data-portal-catalog
+Type:         document
+Status:       deployed
+Contact:      Chip Rosenthal <chip@unicom.com>
+Categories:   [ open data ]
