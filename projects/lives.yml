@@ -1,8 +1,8 @@
 Name: LIVES
-Description: Generate LIVES standard data feed from restaurant inspection scores in Austin, TX.
+Description: Data feed of restaurant inspection scores for Austin/Travis County in LIVES format.
 Access_at: http://data.open-austin.org/lives.ci.austin.tx.us.zip
 Project_at: https://github.com/chip-rosenthal/atx-lives-feed
 Type: dataset
 Status: deployed
 Categories: [ food safety ]
-Contact: hack@open-austin.org
+Contact: Chip Rosenthal <chip@unicom.com>

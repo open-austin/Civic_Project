@@ -1,5 +1,5 @@
 Name: Austin Restaurant Scores
-Description: Application to query Austin/Travis County Health Department restaurant inspection scores.
+Description: Query Austin/Travis County Health Department restaurant inspection scores.
 Access_at: http://open-austin.github.io/atx-restaurant-scores/public/index.html
 Project_at: https://github.com/open-austin/atx-restaurant-scores
 Type: web application
