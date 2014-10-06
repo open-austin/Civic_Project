@@ -1,8 +1,8 @@
-Name:         Civic Project
-Description:  Registry of civic projects produced by Open Austin participants.
+Name:         Civic Project Directory
+Description:  Directory of civic projects produced by Open Austin participants.
 Access_at:    http://www.open-austin.org/hack-team/projects
 Project_at:   https://github.com/open-austin/Civic_Project
-Type:         dataset
+Type:         document
 Status:       deployed
 Contact:      hack@open-austin.org
 Categories:   [ civic hacking ]
