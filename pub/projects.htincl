@@ -156,6 +156,17 @@
   
   <li>
   
+    <a href="http://www.open-austin.org/hack-team/projects">Civic Project Directory</a>
+  
+  &ndash; Directory of civic projects produced by Open Austin participants.
+  
+    <span class="project-info">[<a href="https://github.com/open-austin/Civic_Project" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-deployed">deployed</span>
+  </li>
+  
+  <li>
+  
     <a href="http://data.open-austin.org/data-catalogs/views/by-department.html">Open Gov Datasets by Department/Category</a>
   
   &ndash; Report on datasets published on the City of Austin Open Data portal, updated nightly.
@@ -173,9 +184,9 @@
   
   <li>
   
-    <a href="https://www.open-austin.org/hack-team/projects">Civic Project</a>
+    <a href="http://data.open-austin.org/Civic_Project/">Civic Project CFAPI Data Feed</a>
   
-  &ndash; Registry of civic projects produced by Open Austin participants.
+  &ndash; Registry of civic projects suitable for end users, produced by Open Austin participants, in CFAPI format.
   
     <span class="project-info">[<a href="https://github.com/open-austin/Civic_Project" class="project-project-at">more info</a>]</span>
   
