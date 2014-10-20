@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 
 require 'csv'
+require 'optparse'
+
+PROGNAME = File.basename($0)
+USAGE = "usage: #{PROGNAME} [OPTIONS]"
 
 BASE_DIR = "#{File.dirname($0)}/.."
 $LOAD_PATH << "#{BASE_DIR}/lib"
@@ -10,28 +14,25 @@ PUB_DIR = "#{BASE_DIR}/pub"
 
 projects = CivicProject.load_dir(PROJECTS_DIR)
 
-# Only include projects that might be of interest to an end user
-#
-WANTED_TYPES = [
-  "web application",
-  "mobile application",
-  "desktop application",
-  ### "web service",
-  "website",
-  ### "dataset",
-  "document",
-]
+VALID_TYPES = {
+  "web application" => true,
+  "mobile application" => true,
+  "desktop application" => true,
+  "web service" => false,
+  "website" => true,
+  "dataset" => false,
+  "document" => true,
+}
+WANTED_TYPES = VALID_TYPES.keys.select {|k| VALID_TYPES[k]}
 
-# Only include projects with a STATUS value that indicates it's fairly
-# usable by the public.
-#
-WANTED_STATUSES = [
-  ### "ideation",
-  ### "in development",
-  "beta",
-  "deployed",
-  ### "archival",
-]
+VALID_STATUSES = {
+  "ideation" => false,
+  "in development" => false,
+  "beta" => true,
+  "deployed" => true,
+  "archival" => false,
+}
+WANTED_STATUSES = VALID_STATUSES.keys.select {|k| VALID_STATUSES[k]}
 
 # Columns in the CFAPI specification, mapped to field keys.
 #
@@ -44,11 +45,58 @@ COLS = {
   'categories' => :CATEGORIES,
 }
 
+@wanted_types = WANTED_TYPES
+@wanted_statuses = WANTED_STATUSES
+
+def die(*args)
+  $stderr.puts args
+  exit 1
+end
+
+OptionParser.new do |opts|
+  opts.banner = USAGE
+
+  opts.on("-t", "--type TYPELIST", "Select project types, comma delimited list, \"ALL\" for all.") do |arg|
+    if arg == "ALL"
+      @wanted_types = nil
+    else
+      @wanted_types = arg.split(/,/).map {|s| s.strip}
+      e = @wanted_types - VALID_TYPES.keys
+      unless e.empty?
+        die("#{PROGNAME}: bad type value(s): #{e.join(', ')}")
+      end
+    end
+  end
+  a = VALID_TYPES.keys.map{|s| "#{s}#{VALID_TYPES[s] ? '*' : ''}"}.join(', ')
+  opts.separator "\tValid type values: #{a}"
+
+  opts.on("-s", "--status STATUSLIST", "Select project statuses, comma delimited list, \"ALL\" for all.") do |arg|
+    if arg == "ALL"
+      @wanted_statuses = nil
+    else
+      @wanted_statuses = arg.split(/,/).map {|s| s.strip}
+      e = @wanted_statuses - VALID_STATUSES.keys
+      unless e.empty?
+        die("#{PROGNAME}: bad status value(s): #{e.join(', ')}")
+      end
+    end
+  end
+  a = VALID_STATUSES.keys.map{|s| "#{s}#{VALID_STATUSES[s] ? '*' : ''}"}.join(', ')
+  opts.separator "\tValid status values: #{a}"
+
+  opts.on("-h", "--help", "Display this help.") do
+    puts opts
+    exit(0)
+  end
+
+end.parse!
+
+
 puts COLS.keys.to_csv
 
 projects.each do |proj|
-  next unless WANTED_STATUSES.include?(proj[:STATUS])
-  next unless WANTED_TYPES.include?(proj[:TYPE])
+  next unless @wanted_statuses.nil? || @wanted_statuses.include?(proj[:STATUS])
+  next unless @wanted_types.nil? || @wanted_types.include?(proj[:TYPE])
   puts COLS.map {|col, key| proj[key]}.map{|value| Array(value).flatten.join(",")}.to_csv
 end
 
