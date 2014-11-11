@@ -173,7 +173,7 @@ class CivicProject
     @fields.freeze
   end
 
-  # TODO - document, test
+  # Produce content of this project as a list: [[key, value], [key, value] ...]
   def to_list
     @fields.to_a.map {|a| [a[0].to_s.downcase, a[1]]}
   end

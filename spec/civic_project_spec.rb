@@ -10,6 +10,14 @@ describe CivicProject do
     :STATUS => "in development",
   }.freeze
 
+  EXAMPLE_ATTRS_LIST = [
+    ["key", "project_key"],
+    ["name", "Project Name"],
+    ["description", "This is a description of the project."],
+    ["type", "web application"],
+    ["status", "in development"],
+  ].freeze
+
   describe ".new" do
     it "creates an instance" do
       a = CivicProject.new(EXAMPLE_ATTRS)
@@ -261,6 +269,15 @@ describe CivicProject do
     end
     it "returns values as a hash" do
       @a.to_h.should == EXAMPLE_ATTRS
+    end
+  end
+
+  describe "#to_list" do
+    before(:each) do
+      @a = CivicProject.new(EXAMPLE_ATTRS)
+    end
+    it "returns values as a hash" do
+      @a.to_list.should == EXAMPLE_ATTRS_LIST
     end
   end
 
