@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects type="array">
+  <project>
+    <name>Hack Task Aggregator</name>
+    <description>Application to aggregate tasks across projects that are identified for "hacking".</description>
+    <access-at>http://open-austin.github.io/hack-task-aggregator/public/index.html</access-at>
+    <project-at>https://github.com/open-austin/hack-task-aggregator</project-at>
+    <type>web application</type>
+    <status>deployed</status>
+    <categories type="array">
+      <category>project management</category>
+      <category>civic hacking</category>
+    </categories>
+    <contact>hack@open-austin.org</contact>
+    <key>hack-task-aggregator</key>
+  </project>
+  <project>
+    <name>MetroRappid</name>
+    <description>Realtime map of Austin's MetroRapid and MetroRail routes.</description>
+    <access-at>http://metrorappid.com</access-at>
+    <project-at>https://github.com/luqmaan/metrorappid</project-at>
+    <type>web application</type>
+    <status>deployed</status>
+    <categories type="array">
+      <category>transit</category>
+      <category>transportation</category>
+      <category>bus</category>
+      <category>train</category>
+    </categories>
+    <contact>Luqmaan Dawoodjee &lt;ldawoodjee@gmail.com&gt;</contact>
+    <key>metrorappid</key>
+  </project>
+  <project>
+    <name>Vote ATX</name>
+    <description>Voting place finder for Austin/Travis County elections.</description>
+    <access-at>http://voteatx.us/</access-at>
+    <project-at>https://github.com/open-austin/voteatx-app</project-at>
+    <type>web application</type>
+    <status>deployed</status>
+    <categories type="array">
+      <category>elections</category>
+      <category>politics</category>
+      <category>voting</category>
+    </categories>
+    <contact>hack@open-austin.org</contact>
+    <key>vote-atx</key>
+  </project>
+  <project>
+    <name>Austin Restaurant Scores</name>
+    <description>Query Austin/Travis County Health Department restaurant inspection scores.</description>
+    <access-at>http://open-austin.github.io/atx-restaurant-scores/public/index.html</access-at>
+    <project-at>https://github.com/open-austin/atx-restaurant-scores</project-at>
+    <type>web application</type>
+    <status>beta</status>
+    <categories type="array">
+      <category>food safety</category>
+    </categories>
+    <contact>hack@open-austin.org</contact>
+    <key>austin-restaurant-scores</key>
+  </project>
+  <project>
+    <name>Austin Recycles</name>
+    <description>Application that provides service information for City of Austin trash and recycling pickup.</description>
+    <access-at>http://austin-recycles.open-austin.org/</access-at>
+    <project-at>https://github.com/open-austin/austin-recycles</project-at>
+    <type>web application</type>
+    <status>in development</status>
+    <categories type="array">
+      <category>environment</category>
+      <category>recycle</category>
+      <category>waste management</category>
+    </categories>
+    <contact>hack@open-austin.org</contact>
+    <key>austin-recycles</key>
+  </project>
+  <project>
+    <name>311 vs 10-1</name>
+    <description>Visualization of 311 service calls broken down by 10-1 city council district.</description>
+    <access-at nil="true"/>
+    <project-at>https://github.com/mateoclarke/311vs10One</project-at>
+    <type>web application</type>
+    <status>ideation</status>
+    <contact>Mateo Clarke &lt;mateo.clarke@gmail.com&gt;</contact>
+    <categories type="array">
+      <category type="integer">311</category>
+      <category>city council districts</category>
+    </categories>
+    <key>311vs10One</key>
+  </project>
+  <project>
+    <name>TEC Filer</name>
+    <description>A system for filing campaign finance reports required by the Texas Ethics Commission.</description>
+    <access-at nil="true"/>
+    <project-at>https://github.com/open-austin/tecfiler</project-at>
+    <type>web application</type>
+    <status>ideation</status>
+    <categories type="array">
+      <category>elections</category>
+    </categories>
+    <contact>hack@open-austin.org</contact>
+    <key>tec-filer</key>
+  </project>
+  <project>
+    <name>Bike Buddy</name>
+    <description>Connecting people who want to try bicycle commuting with experienced bicycle commuters who want to help. A May 2013 Austin Bike Month initiative.</description>
+    <access-at>http://bike-buddy.open-austin.org/</access-at>
+    <project-at>https://github.com/chip-rosenthal/bike-buddy</project-at>
+    <type>web application</type>
+    <status>archival</status>
+    <categories type="array">
+      <category>transporation</category>
+      <category>bicycling</category>
+    </categories>
+    <contact>Chip Rosenthal &lt;chip@unicom.com&gt;</contact>
+    <key>bike-buddy</key>
+  </project>
+  <project>
+    <name>District Enricher</name>
+    <description>Enrich an existing dataset with city council district information.</description>
+    <access-at nil="true"/>
+    <project-at>https://github.com/chip-rosenthal/district-enricher</project-at>
+    <type>desktop application</type>
+    <status>ideation</status>
+    <contact>Chip Rosenthal &lt;chip@unicom.com&gt;</contact>
+    <categories type="array">
+      <category>category</category>
+      <category>...</category>
+    </categories>
+    <key>district-enricher</key>
+  </project>
+  <project>
+    <name>How to Use the City of Austin Open Data Portal</name>
+    <description>"How-To" tutorials that show basic and common tasks on the City of Austin Open Data Portal.</description>
+    <access-at>http://atxdataportal.wikispaces.com/</access-at>
+    <project-at nil="true"/>
+    <type>website</type>
+    <status>deployed</status>
+    <contact>hack@open-austin.org</contact>
+    <categories type="array">
+      <category>open data</category>
+    </categories>
+    <key>atx-data-portal</key>
+  </project>
+  <project>
+    <name>Open Austin Data Portal</name>
+    <description>Data published by Open Austin.</description>
+    <access-at>http://data.open-austin.org/</access-at>
+    <project-at nil="true"/>
+    <type>website</type>
+    <status>deployed</status>
+    <contact>info@open-austin.org</contact>
+    <categories type="array">
+      <category>open data</category>
+    </categories>
+    <key>data-portal</key>
+  </project>
+  <project>
+    <name>Cute Pets Austin</name>
+    <description>A "Twitter bot" that posts a random adoptable pet from the Austin Animal Center.</description>
+    <access-at>https://twitter.com/CutePetsAustin</access-at>
+    <project-at>https://github.com/open-austin/CutePetsAustin</project-at>
+    <type>website</type>
+    <status>beta</status>
+    <contact>info@open-austin.org</contact>
+    <categories type="array">
+      <category>animal control</category>
+      <category>twitter</category>
+    </categories>
+    <key>cute-pets-austin</key>
+  </project>
+  <project>
+    <name>Civic Project Directory</name>
+    <description>Directory of civic projects produced by Open Austin participants.</description>
+    <access-at>http://www.open-austin.org/hack-team/projects</access-at>
+    <project-at>https://github.com/open-austin/Civic_Project</project-at>
+    <type>document</type>
+    <status>deployed</status>
+    <contact>hack@open-austin.org</contact>
+    <categories type="array">
+      <category>civic hacking</category>
+    </categories>
+    <key>civic_project_page</key>
+  </project>
+  <project>
+    <name>Open Gov Datasets by Department/Category</name>
+    <description>Report on datasets published on the City of Austin Open Data portal, updated nightly.</description>
+    <access-at>http://data.open-austin.org/data-catalogs/views/by-department.html</access-at>
+    <project-at>https://github.com/chip-rosenthal/pull-data-portal-catalog</project-at>
+    <type>document</type>
+    <status>deployed</status>
+    <contact>Chip Rosenthal &lt;chip@unicom.com&gt;</contact>
+    <categories type="array">
+      <category>open data</category>
+    </categories>
+    <key>datasets-by-dept</key>
+  </project>
+  <project>
+    <name>Civic Project CFAPI Data Feed</name>
+    <description>Registry of civic projects suitable for end users, produced by Open Austin participants, in CFAPI format.</description>
+    <access-at>http://data.open-austin.org/Civic_Project/</access-at>
+    <project-at>https://github.com/open-austin/Civic_Project</project-at>
+    <type>dataset</type>
+    <status>deployed</status>
+    <contact>hack@open-austin.org</contact>
+    <categories type="array">
+      <category>civic hacking</category>
+    </categories>
+    <key>civic_project_datafeed</key>
+  </project>
+  <project>
+    <name>LIVES</name>
+    <description>Data feed of restaurant inspection scores for Austin/Travis County in LIVES format.</description>
+    <access-at>http://data.open-austin.org/lives.ci.austin.tx.us.zip</access-at>
+    <project-at>https://github.com/chip-rosenthal/atx-lives-feed</project-at>
+    <type>dataset</type>
+    <status>deployed</status>
+    <categories type="array">
+      <category>food safety</category>
+    </categories>
+    <contact>Chip Rosenthal &lt;chip@unicom.com&gt;</contact>
+    <key>lives</key>
+  </project>
+</projects>

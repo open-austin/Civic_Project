@@ -62,8 +62,9 @@ class CivicProject
   def self.load_yml(filename)
     require "yaml"
     a = YAML.load_file(filename)
+    a = a.to_h unless a.instance_of?(Hash)
     key = File.basename(filename, ".yml")
-    new(a.to_h.merge(:KEY => key))
+    new(a.merge(:KEY => key))
   end
 
 
@@ -170,6 +171,11 @@ class CivicProject
 
   def to_h
     @fields.freeze
+  end
+
+  # TODO - document, test
+  def to_list
+    @fields.to_a.map {|a| [a[0].to_s.downcase, a[1]]}
   end
 
   def <=>(b)

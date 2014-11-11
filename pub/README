@@ -1,5 +1,9 @@
 This directory contains artifacts produced by Civic_Project.
 
+* projects.csv - List of all projects in CSV format.
+
+* projects.xml - List of all projects in XML format.
+
 * cfapi-full.csv - A list of all civic projects in CFAPI format.
   The CFAPI format is documented here:
   https://github.com/codeforamerica/cfapi/blob/master/README.md#projects-list

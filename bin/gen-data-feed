@@ -1,8 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'optparse'
-require 'csv'
-require 'builder'
 
 PROGNAME = File.basename($0)
 USAGE = "usage: #{PROGNAME} [OPTIONS]"
@@ -40,9 +38,11 @@ end.parse!
 case @format
 
 when :XML
-  raise "sorry ... XML not done yet"
+  require 'active_support/core_ext'
+  puts @projects.map {|p| Hash[p.to_list]}.to_xml(:root => "projects", :children => "project")
 
 when :CSV
+  require 'csv'
   keys = CivicProject::FIELDS.keys
   puts keys.to_csv
   @projects.each do |proj|
