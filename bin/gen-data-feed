@@ -1,0 +1,53 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'csv'
+require 'builder'
+
+PROGNAME = File.basename($0)
+USAGE = "usage: #{PROGNAME} [OPTIONS]"
+
+BASE_DIR = "#{File.dirname($0)}/.."
+$LOAD_PATH << "#{BASE_DIR}/lib"
+require "civic_project.rb"
+PROJECTS_DIR = "#{BASE_DIR}/projects"
+
+VALID_FORMATS = [:CSV, :XML]
+
+@format = :CSV
+@projects = CivicProject.load_dir(PROJECTS_DIR)
+
+def die(*args)
+  $stderr.puts args
+  exit 1
+end
+
+OptionParser.new do |opts|
+  opts.banner = USAGE
+
+  opts.on("-f", "--format FORMAT", "Select output format. (#{VALID_FORMATS.join(', ')})") do |fmt|
+    @format = fmt.upcase.to_sym
+    die("Invalid format \"#{fmt}\" specified.") unless VALID_FORMATS.include?(@format);
+  end
+
+  opts.on("-h", "--help", "Display this help.") do
+    puts opts
+    exit(0)
+  end
+
+end.parse!
+
+case @format
+
+when :XML
+  raise "sorry ... XML not done yet"
+
+when :CSV
+  keys = CivicProject::FIELDS.keys
+  puts keys.to_csv
+  @projects.each do |proj|
+    puts keys.map {|key| proj[key]}.map{|value| Array(value).flatten.join(",")}.to_csv
+  end
+
+end
+

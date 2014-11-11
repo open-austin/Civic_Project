@@ -1,6 +1,7 @@
 require "rake/clean"
 
 ALL = [
+  "pub/projects.csv",     # data feed of all projects
   "pub/cfapi-full.csv",   # data feed of all projects in CFAPI format
   "pub/cfapi-pub.csv",    # data feed of end user projects in CFAPI format
   "pub/projects.htincl",  # HTML inclusion for website projects page
@@ -12,6 +13,10 @@ task :default => ["build"]
 
 task :build => ALL
 
+
+task "pub/projects.csv" => Dir["projects/*.yml"] + ["bin/gen-data-feed"] do |t|
+  sh "bin/gen-data-feed > #{t.name}"
+end
 
 task "pub/cfapi-full.csv" => Dir["projects/*.yml"] + ["bin/gen-cfapi-feed"] do |t|
   sh "bin/gen-cfapi-feed -t ALL -s ALL > #{t.name}"
