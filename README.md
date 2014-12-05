@@ -34,3 +34,13 @@ To generate the documents, run:
 
     rake
 
+## Data Feed
+
+The offical data feed, produced by this project, is hosted at http://data.open-austin.org/Civic_Project/
+
+We encourage republication and distribution of this information.
+
+Summary description for the data feed:
+
+> Projects developed by the community and published by Open Austin (http://www.open-austin.org), a volunteer community group that develops civic applications and tools for Austin residents. This list is produced by the Open Austin "Civic Project" tool, available at https://github.com/open-austin/Civic_Project
+    
