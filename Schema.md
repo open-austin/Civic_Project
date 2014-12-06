@@ -20,6 +20,10 @@ being sourced from a collection of individual files, such as YAML or
 JSON files, recommend that the files be named with this key (plus an
 extension).
 
+Example: if the data for a project is stored in a file named
+"project_name.yml", then the _key_ for the project should be set
+to "project_name".
+
 
 ### name
 
