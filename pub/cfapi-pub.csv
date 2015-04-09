@@ -1,8 +1,8 @@
 name,description,link_url,code_url,type,categories
+Austin Restaurant Scores,Query Austin/Travis County Health Department restaurant inspection scores.,http://open-austin.github.io/atx-restaurant-scores/public/index.html,https://github.com/open-austin/atx-restaurant-scores,web application,food safety
 Hack Task Aggregator,"Application to aggregate tasks across projects that are identified for ""hacking"".",http://open-austin.github.io/hack-task-aggregator/public/index.html,https://github.com/open-austin/hack-task-aggregator,web application,"project management,civic hacking"
 MetroRappid,Realtime map of Austin's MetroRapid and MetroRail routes.,http://metrorappid.com,https://github.com/luqmaan/metrorappid,web application,"transit,transportation,bus,train"
 Vote ATX,Voting place finder for Austin/Travis County elections.,http://voteatx.us/,https://github.com/open-austin/voteatx-app,web application,"elections,politics,voting"
-Austin Restaurant Scores,Query Austin/Travis County Health Department restaurant inspection scores.,http://open-austin.github.io/atx-restaurant-scores/public/index.html,https://github.com/open-austin/atx-restaurant-scores,web application,food safety
 How to Use the City of Austin Open Data Portal,"""How-To"" tutorials that show basic and common tasks on the City of Austin Open Data Portal.",http://atxdataportal.wikispaces.com/,"",website,open data
 Open Austin Data Portal,Data published by Open Austin.,http://data.open-austin.org/,"",website,open data
 Cute Pets Austin,"A ""Twitter bot"" that posts a random adoptable pet from the Austin Animal Center.",https://twitter.com/CutePetsAustin,https://github.com/open-austin/CutePetsAustin,website,"animal control,twitter"

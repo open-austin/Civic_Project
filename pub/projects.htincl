@@ -10,6 +10,17 @@
   
   <li>
   
+    <a href="http://open-austin.github.io/atx-restaurant-scores/public/index.html">Austin Restaurant Scores</a>
+  
+  &ndash; Query Austin/Travis County Health Department restaurant inspection scores.
+  
+    <span class="project-info">[<a href="https://github.com/open-austin/atx-restaurant-scores" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-deployed">deployed</span>
+  </li>
+  
+  <li>
+  
     <a href="http://open-austin.github.io/hack-task-aggregator/public/index.html">Hack Task Aggregator</a>
   
   &ndash; Application to aggregate tasks across projects that are identified for &quot;hacking&quot;.
@@ -43,17 +54,6 @@
   
   <li>
   
-    <a href="http://open-austin.github.io/atx-restaurant-scores/public/index.html">Austin Restaurant Scores</a>
-  
-  &ndash; Query Austin/Travis County Health Department restaurant inspection scores.
-  
-    <span class="project-info">[<a href="https://github.com/open-austin/atx-restaurant-scores" class="project-project-at">more info</a>]</span>
-  
-  <span class="project-status project-status-beta">beta</span>
-  </li>
-  
-  <li>
-  
     <a href="http://austin-recycles.open-austin.org/">Austin Recycles</a>
   
   &ndash; Application that provides service information for City of Austin trash and recycling pickup.
@@ -65,9 +65,9 @@
   
   <li>
   
-    311 vs 10-1
+    <a href="http://mateoclarke.github.io/311vs10One/">311 vs 10-ONE</a>
   
-  &ndash; Visualization of 311 service calls broken down by 10-1 city council district.
+  &ndash; Visualization of 311 service calls broken down by 10-ONE city council district.
   
     <span class="project-info">[<a href="https://github.com/mateoclarke/311vs10One" class="project-project-at">more info</a>]</span>
   
@@ -101,6 +101,17 @@
     
     <h2>Desktop Application</h2>
     <ul class="projects">
+  
+  <li>
+  
+    Socrata Data Portal Analytics
+  
+  &ndash; Suite of tools for analyzing Socrata data portal site metrics and metadata.
+  
+    <span class="project-info">[<a href="https://github.com/nghadji/Socrata-Data-Portal-Analytics" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-in_development">in development</span>
+  </li>
   
   <li>
   

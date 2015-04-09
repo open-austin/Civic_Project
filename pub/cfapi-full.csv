@@ -1,12 +1,13 @@
 name,description,link_url,code_url,type,categories
+Austin Restaurant Scores,Query Austin/Travis County Health Department restaurant inspection scores.,http://open-austin.github.io/atx-restaurant-scores/public/index.html,https://github.com/open-austin/atx-restaurant-scores,web application,food safety
 Hack Task Aggregator,"Application to aggregate tasks across projects that are identified for ""hacking"".",http://open-austin.github.io/hack-task-aggregator/public/index.html,https://github.com/open-austin/hack-task-aggregator,web application,"project management,civic hacking"
 MetroRappid,Realtime map of Austin's MetroRapid and MetroRail routes.,http://metrorappid.com,https://github.com/luqmaan/metrorappid,web application,"transit,transportation,bus,train"
 Vote ATX,Voting place finder for Austin/Travis County elections.,http://voteatx.us/,https://github.com/open-austin/voteatx-app,web application,"elections,politics,voting"
-Austin Restaurant Scores,Query Austin/Travis County Health Department restaurant inspection scores.,http://open-austin.github.io/atx-restaurant-scores/public/index.html,https://github.com/open-austin/atx-restaurant-scores,web application,food safety
 Austin Recycles,Application that provides service information for City of Austin trash and recycling pickup.,http://austin-recycles.open-austin.org/,https://github.com/open-austin/austin-recycles,web application,"environment,recycle,waste management"
-311 vs 10-1,Visualization of 311 service calls broken down by 10-1 city council district.,"",https://github.com/mateoclarke/311vs10One,web application,"311,city council districts"
+311 vs 10-ONE,Visualization of 311 service calls broken down by 10-ONE city council district.,http://mateoclarke.github.io/311vs10One/,https://github.com/mateoclarke/311vs10One,web application,"311,city council districts"
 TEC Filer,A system for filing campaign finance reports required by the Texas Ethics Commission.,"",https://github.com/open-austin/tecfiler,web application,elections
 Bike Buddy,Connecting people who want to try bicycle commuting with experienced bicycle commuters who want to help. A May 2013 Austin Bike Month initiative.,http://bike-buddy.open-austin.org/,https://github.com/chip-rosenthal/bike-buddy,web application,"transporation,bicycling"
+Socrata Data Portal Analytics,Suite of tools for analyzing Socrata data portal site metrics and metadata.,"",https://github.com/nghadji/Socrata-Data-Portal-Analytics,desktop application,open data
 District Enricher,Enrich an existing dataset with city council district information.,"",https://github.com/chip-rosenthal/district-enricher,desktop application,"category,..."
 How to Use the City of Austin Open Data Portal,"""How-To"" tutorials that show basic and common tasks on the City of Austin Open Data Portal.",http://atxdataportal.wikispaces.com/,"",website,open data
 Open Austin Data Portal,Data published by Open Austin.,http://data.open-austin.org/,"",website,open data
