@@ -1,0 +1,8 @@
+Name: Instabus
+Description: Realtime map of Austin's public transit. Works well on mobile and desktop.
+Access_at: http://instabus.org
+Project_at: https://github.com/luqmaan/instabus
+Type: web application
+Status: deployed
+Categories: [ transit, transportation, bus, train ]
+Contact: Luqmaan Dawoodjee <ldawoodjee@gmail.com>

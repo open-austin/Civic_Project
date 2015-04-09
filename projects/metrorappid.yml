@@ -1,8 +1,0 @@
-Name: MetroRappid
-Description: Realtime map of Austin's MetroRapid and MetroRail routes.
-Access_at: http://metrorappid.com
-Project_at: https://github.com/luqmaan/metrorappid
-Type: web application
-Status: deployed
-Categories: [ transit, transportation, bus, train ]
-Contact: Luqmaan Dawoodjee <ldawoodjee@gmail.com>
