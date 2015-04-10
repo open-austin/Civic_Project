@@ -28,10 +28,10 @@
     <key>hack-task-aggregator</key>
   </project>
   <project>
-    <name>MetroRappid</name>
-    <description>Realtime map of Austin's MetroRapid and MetroRail routes.</description>
-    <access-at>http://metrorappid.com</access-at>
-    <project-at>https://github.com/luqmaan/metrorappid</project-at>
+    <name>Instabus</name>
+    <description>Realtime map of Austin's public transit. Works well on mobile and desktop.</description>
+    <access-at>http://instabus.org</access-at>
+    <project-at>https://github.com/luqmaan/instabus</project-at>
     <type>web application</type>
     <status>deployed</status>
     <categories type="array">
@@ -41,7 +41,7 @@
       <category>train</category>
     </categories>
     <contact>Luqmaan Dawoodjee &lt;ldawoodjee@gmail.com&gt;</contact>
-    <key>metrorappid</key>
+    <key>instabus</key>
   </project>
   <project>
     <name>Vote ATX</name>

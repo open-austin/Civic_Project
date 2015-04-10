@@ -1,7 +1,7 @@
 name,description,link_url,code_url,type,categories
 Austin Restaurant Scores,Query Austin/Travis County Health Department restaurant inspection scores.,http://open-austin.github.io/atx-restaurant-scores/public/index.html,https://github.com/open-austin/atx-restaurant-scores,web application,food safety
 Hack Task Aggregator,"Application to aggregate tasks across projects that are identified for ""hacking"".",http://open-austin.github.io/hack-task-aggregator/public/index.html,https://github.com/open-austin/hack-task-aggregator,web application,"project management,civic hacking"
-MetroRappid,Realtime map of Austin's MetroRapid and MetroRail routes.,http://metrorappid.com,https://github.com/luqmaan/metrorappid,web application,"transit,transportation,bus,train"
+Instabus,Realtime map of Austin's public transit. Works well on mobile and desktop.,http://instabus.org,https://github.com/luqmaan/instabus,web application,"transit,transportation,bus,train"
 Vote ATX,Voting place finder for Austin/Travis County elections.,http://voteatx.us/,https://github.com/open-austin/voteatx-app,web application,"elections,politics,voting"
 Austin Recycles,Application that provides service information for City of Austin trash and recycling pickup.,http://austin-recycles.open-austin.org/,https://github.com/open-austin/austin-recycles,web application,"environment,recycle,waste management"
 311 vs 10-ONE,Visualization of 311 service calls broken down by 10-ONE city council district.,http://mateoclarke.github.io/311vs10One/,https://github.com/mateoclarke/311vs10One,web application,"311,city council districts"
