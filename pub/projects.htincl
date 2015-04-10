@@ -32,11 +32,11 @@
   
   <li>
   
-    <a href="http://metrorappid.com">MetroRappid</a>
+    <a href="http://instabus.org">Instabus</a>
   
-  &ndash; Realtime map of Austin's MetroRapid and MetroRail routes.
+  &ndash; Realtime map of Austin's public transit. Works well on mobile and desktop.
   
-    <span class="project-info">[<a href="https://github.com/luqmaan/metrorappid" class="project-project-at">more info</a>]</span>
+    <span class="project-info">[<a href="https://github.com/luqmaan/instabus" class="project-project-at">more info</a>]</span>
   
   <span class="project-status project-status-deployed">deployed</span>
   </li>
