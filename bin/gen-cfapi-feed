@@ -43,6 +43,8 @@ COLS = {
   'code_url' => :PROJECT_AT,
   'type' => :TYPE,
   'categories' => :CATEGORIES,
+  'tags' => Proc.new {|row| "" },
+  'status' => :STATUS,
 }
 
 @wanted_types = WANTED_TYPES
@@ -97,6 +99,15 @@ puts COLS.keys.to_csv
 projects.each do |proj|
   next unless @wanted_statuses.nil? || @wanted_statuses.include?(proj[:STATUS])
   next unless @wanted_types.nil? || @wanted_types.include?(proj[:TYPE])
-  puts COLS.map {|col, key| proj[key]}.map{|value| Array(value).flatten.join(",")}.to_csv
+  puts COLS.map {|col, key|
+    case key
+    when Symbol
+      proj[key]
+    when Proc
+      key.call(proj)
+    else
+      raise "unknown key type: #{key}"
+    end
+  }.map{|value| Array(value).flatten.join(",")}.to_csv
 end
 
