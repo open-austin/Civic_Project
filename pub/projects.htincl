@@ -21,6 +21,17 @@
   
   <li>
   
+    <a href="http://cycle-nearby.open-austin.org/">Cycle Nearby Austin</a>
+  
+  &ndash; Location aware map of City of Austin resources and bicycle relate police report.
+  
+    <span class="project-info">[<a href="https://github.com/AustinBlues/Good-Sect--Bad-Sect" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-deployed">deployed</span>
+  </li>
+  
+  <li>
+  
     <a href="http://open-austin.github.io/hack-task-aggregator/public/index.html">Hack Task Aggregator</a>
   
   &ndash; Application to aggregate tasks across projects that are identified for &quot;hacking&quot;.
@@ -34,7 +45,7 @@
   
     <a href="http://instabus.org">Instabus</a>
   
-  &ndash; Realtime map of Austin's public transit. Works well on mobile and desktop.
+  &ndash; Realtime map of Austin&#39;s public transit. Works well on mobile and desktop.
   
     <span class="project-info">[<a href="https://github.com/luqmaan/instabus" class="project-project-at">more info</a>]</span>
   
