@@ -38,6 +38,7 @@ end.parse!
 case @format
 
 when :XML
+  require 'active_support'
   require 'active_support/core_ext'
   puts @projects.map {|p| Hash[p.to_list]}.to_xml(:root => "projects", :children => "project")
 
