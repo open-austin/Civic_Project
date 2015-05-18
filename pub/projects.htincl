@@ -65,6 +65,17 @@
   
   <li>
   
+    <a href="http://open-austin.github.io/Austin_Parks_Acreage/">Austin Parks Acreage</a>
+  
+  &ndash; Visualize and compare the distribution of parks, recreational facilities, and green spaces in Austin.
+  
+    <span class="project-info">[<a href="https://github.com/open-austin/Austin_Parks_Acreage" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-in_development">in development</span>
+  </li>
+  
+  <li>
+  
     <a href="http://austin-recycles.open-austin.org/">Austin Recycles</a>
   
   &ndash; Application that provides service information for City of Austin trash and recycling pickup.

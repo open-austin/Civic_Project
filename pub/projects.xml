@@ -24,7 +24,7 @@
     <categories type="array">
       <category>bicycle</category>
     </categories>
-    <key>cycle_nearby</key>
+    <key>cycle-nearby</key>
   </project>
   <project>
     <name>Hack Task Aggregator</name>
@@ -70,6 +70,23 @@
     </categories>
     <contact>hack@open-austin.org</contact>
     <key>vote-atx</key>
+  </project>
+  <project>
+    <name>Austin Parks Acreage</name>
+    <description>Visualize and compare the distribution of parks, recreational facilities, and green spaces in Austin.</description>
+    <access-at>http://open-austin.github.io/Austin_Parks_Acreage/</access-at>
+    <project-at>https://github.com/open-austin/Austin_Parks_Acreage</project-at>
+    <type>web application</type>
+    <status>in development</status>
+    <contact>Mateo Clarke &lt;code@mateoclarke.com&gt;</contact>
+    <categories type="array">
+      <category>GIS</category>
+      <category>mapping</category>
+      <category>parks</category>
+      <category>inequity</category>
+      <category>green-space</category>
+    </categories>
+    <key>austin-parks-acreage</key>
   </project>
   <project>
     <name>Austin Recycles</name>
