@@ -10,7 +10,7 @@ $LOAD_PATH << "#{BASE_DIR}/lib"
 require "civic_project.rb"
 PROJECTS_DIR = "#{BASE_DIR}/projects"
 
-VALID_FORMATS = [:CSV, :XML]
+VALID_FORMATS = [:CSV, :XML, :JSON]
 
 @format = :CSV
 @projects = CivicProject.load_dir(PROJECTS_DIR)
@@ -41,6 +41,10 @@ when :XML
   require 'active_support'
   require 'active_support/core_ext'
   puts @projects.map {|p| Hash[p.to_list]}.to_xml(:root => "projects", :children => "project")
+
+when :JSON
+  require 'json'
+  puts @projects.map {|p| Hash[p.to_list]}.to_json
 
 when :CSV
   require 'csv'

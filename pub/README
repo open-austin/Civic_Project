@@ -2,15 +2,17 @@ This directory contains artifacts produced by Civic_Project.
 
 * projects.csv - List of all projects in CSV format.
 
+* projects.json - List of all projects in JSON format.
+
 * projects.xml - List of all projects in XML format.
 
-* cfapi-full.csv - A list of all civic projects in CFAPI format.
-  The CFAPI format is documented here:
+* cfapi-full.csv - List of all projects in CFAPI format.  The CFAPI
+  format is documented here:
   https://github.com/codeforamerica/cfapi/blob/master/README.md#projects-list
 
-* cfapi-pub.csv - Civic projects available for public use, in CFAPI format.
-  This includes a limited set of project types and project statuses, which
-  identifies projects of interest to end users.
+* cfapi-pub.csv - Selected list of projects, available for general public
+  use, in CFAPI format.  This includes a limited set of project types and
+  project statuses, which identifies projects of interest to end users.
 
 * projects.htincl - HTML listing of civic projects, for inclusion in
   the Projects page on the Open Austin website.
