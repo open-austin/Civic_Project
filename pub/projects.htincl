@@ -45,7 +45,7 @@
   
     <a href="http://instabus.org">Instabus</a>
   
-  &ndash; Realtime map of Austin's public transit. Works well on mobile and desktop.
+  &ndash; Realtime map of Austin&#39;s public transit. Works well on mobile and desktop.
   
     <span class="project-info">[<a href="https://github.com/luqmaan/instabus" class="project-project-at">more info</a>]</span>
   
@@ -61,6 +61,17 @@
     <span class="project-info">[<a href="https://github.com/open-austin/voteatx-app" class="project-project-at">more info</a>]</span>
   
   <span class="project-status project-status-deployed">deployed</span>
+  </li>
+  
+  <li>
+  
+    <a href="http://open-austin.github.io/austingreenmap/">Austin Green Map</a>
+  
+  &ndash; Map of Austin&#39;s parks that is easy to search and works offline.
+  
+    <span class="project-info">[<a href="https://github.com/open-austin/austingreenmap" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-beta">beta</span>
   </li>
   
   <li>

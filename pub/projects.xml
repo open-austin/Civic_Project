@@ -72,6 +72,22 @@
     <key>vote-atx</key>
   </project>
   <project>
+    <name>Austin Green Map</name>
+    <description>Map of Austin's parks that is easy to search and works offline.</description>
+    <access-at>http://open-austin.github.io/austingreenmap/</access-at>
+    <project-at>https://github.com/open-austin/austingreenmap</project-at>
+    <type>web application</type>
+    <status>beta</status>
+    <contact>Luqmaan Dawoodjee &lt;ldawoodjee@gmail.com&gt;</contact>
+    <categories type="array">
+      <category>map</category>
+      <category>parks</category>
+      <category>austin</category>
+      <category>pard</category>
+    </categories>
+    <key>austingreenmap</key>
+  </project>
+  <project>
     <name>Austin Parks Acreage</name>
     <description>Visualize and compare the distribution of parks, recreational facilities, and green spaces in Austin.</description>
     <access-at>http://open-austin.github.io/Austin_Parks_Acreage/</access-at>
