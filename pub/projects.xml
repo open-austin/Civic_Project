@@ -161,6 +161,24 @@
     <key>bike-buddy</key>
   </project>
   <project>
+    <name>Green Map - Interactive Map of Austin's Parks</name>
+    <description>iOS app with map Austin's parks that is easy to search and works offline.</description>
+    <access-at>https://itunes.apple.com/us/app/green-map-interactive-map/id1022734155</access-at>
+    <project-at>https://github.com/open-austin/austingreenmap-cordova</project-at>
+    <type>mobile application</type>
+    <status>beta</status>
+    <contact>Luqmaan Dawoodjee &lt;ldawoodjee@gmail.com&gt;</contact>
+    <categories type="array">
+      <category>map</category>
+      <category>parks</category>
+      <category>austin</category>
+      <category>pard</category>
+      <category>ios</category>
+      <category>app</category>
+    </categories>
+    <key>austingreenmap-ios</key>
+  </project>
+  <project>
     <name>Socrata Data Portal Analytics</name>
     <description>Suite of tools for analyzing Socrata data portal site metrics and metadata.</description>
     <access-at nil="true"/>

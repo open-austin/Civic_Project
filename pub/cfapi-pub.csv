@@ -5,6 +5,7 @@ Hack Task Aggregator,"Application to aggregate tasks across projects that are id
 Instabus,Realtime map of Austin's public transit. Works well on mobile and desktop.,http://instabus.org,https://github.com/luqmaan/instabus,web application,"transit,transportation,bus,train","",deployed
 Vote ATX,Voting place finder for Austin/Travis County elections.,http://voteatx.us/,https://github.com/open-austin/voteatx-app,web application,"elections,politics,voting","",deployed
 Austin Green Map,Map of Austin's parks that is easy to search and works offline.,http://open-austin.github.io/austingreenmap/,https://github.com/open-austin/austingreenmap,web application,"map,parks,austin,pard","",beta
+Green Map - Interactive Map of Austin's Parks,iOS app with map Austin's parks that is easy to search and works offline.,https://itunes.apple.com/us/app/green-map-interactive-map/id1022734155,https://github.com/open-austin/austingreenmap-cordova,mobile application,"map,parks,austin,pard,ios,app","",beta
 How to Use the City of Austin Open Data Portal,"""How-To"" tutorials that show basic and common tasks on the City of Austin Open Data Portal.",http://atxdataportal.wikispaces.com/,"",website,open data,"",deployed
 Open Austin Data Portal,Data published by Open Austin.,http://data.open-austin.org/,"",website,open data,"",deployed
 Cute Pets Austin,"A ""Twitter bot"" that posts a random adoptable pet from the Austin Animal Center.",https://twitter.com/CutePetsAustin,https://github.com/open-austin/CutePetsAustin,website,"animal control,twitter","",beta
