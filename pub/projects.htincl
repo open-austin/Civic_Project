@@ -34,9 +34,20 @@
   
     <a href="http://instabus.org">Instabus</a>
   
-  &ndash; Realtime map of Austin&#39;s public transit. Works well on mobile and desktop.
+  &ndash; Realtime map of Austin's public transit. Works well on mobile and desktop.
   
     <span class="project-info">[<a href="https://github.com/luqmaan/instabus" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-deployed">deployed</span>
+  </li>
+  
+  <li>
+  
+    <a href="http://www.pet-alerts.com/">Pet Alerts</a>
+  
+  &ndash; Help owners find lost pets.
+  
+    <span class="project-info">[<a href="https://github.com/open-austin/pet-finder" class="project-project-at">more info</a>]</span>
   
   <span class="project-status project-status-deployed">deployed</span>
   </li>
@@ -56,7 +67,7 @@
   
     <a href="http://open-austin.github.io/austingreenmap/">Austin Green Map</a>
   
-  &ndash; Map of Austin&#39;s parks that is easy to search and works offline.
+  &ndash; Map of Austin's parks that is easy to search and works offline.
   
     <span class="project-info">[<a href="https://github.com/open-austin/austingreenmap" class="project-project-at">more info</a>]</span>
   
@@ -137,9 +148,9 @@
   
   <li>
   
-    <a href="https://itunes.apple.com/us/app/green-map-interactive-map/id1022734155">Green Map - Interactive Map of Austin&#39;s Parks</a>
+    <a href="https://itunes.apple.com/us/app/green-map-interactive-map/id1022734155">Green Map - Interactive Map of Austin's Parks</a>
   
-  &ndash; iOS app with map Austin&#39;s parks that is easy to search and works offline.
+  &ndash; iOS app with map Austin's parks that is easy to search and works offline.
   
     <span class="project-info">[<a href="https://github.com/open-austin/austingreenmap-cordova" class="project-project-at">more info</a>]</span>
   

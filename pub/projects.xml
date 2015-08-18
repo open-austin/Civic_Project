@@ -44,6 +44,20 @@
     <key>instabus</key>
   </project>
   <project>
+    <name>Pet Alerts</name>
+    <description>Help owners find lost pets.</description>
+    <access-at>http://www.pet-alerts.com/</access-at>
+    <project-at>https://github.com/open-austin/pet-finder</project-at>
+    <type>web application</type>
+    <status>deployed</status>
+    <contact>Tim Shelburne</contact>
+    <categories type="array">
+      <category>animal center</category>
+      <category>lost pets</category>
+    </categories>
+    <key>pet-alerts</key>
+  </project>
+  <project>
     <name>Vote ATX</name>
     <description>Voting place finder for Austin/Travis County elections.</description>
     <access-at>http://voteatx.us/</access-at>
