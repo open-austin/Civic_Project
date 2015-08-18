@@ -14,19 +14,6 @@
     <key>austin-restaurant-scores</key>
   </project>
   <project>
-    <name>Cycle Nearby Austin</name>
-    <description>Location aware map of City of Austin resources and bicycle relate police report.</description>
-    <access-at>http://cycle-nearby.open-austin.org/</access-at>
-    <project-at>https://github.com/AustinBlues/Good-Sect--Bad-Sect</project-at>
-    <type>web application</type>
-    <status>deployed</status>
-    <contact>Jeffrey Taylor &lt;jeff.taylor@ieee.org&gt;</contact>
-    <categories type="array">
-      <category>bicycle</category>
-    </categories>
-    <key>cycle-nearby</key>
-  </project>
-  <project>
     <name>Hack Task Aggregator</name>
     <description>Application to aggregate tasks across projects that are identified for "hacking".</description>
     <access-at>http://open-austin.github.io/hack-task-aggregator/public/index.html</access-at>
@@ -159,6 +146,19 @@
     </categories>
     <contact>Chip Rosenthal &lt;chip@unicom.com&gt;</contact>
     <key>bike-buddy</key>
+  </project>
+  <project>
+    <name>Cycle Nearby Austin</name>
+    <description>Location aware map of City of Austin resources and bicycle relate police report.</description>
+    <access-at nil="true"/>
+    <project-at>https://github.com/AustinBlues/Good-Sect--Bad-Sect</project-at>
+    <type>web application</type>
+    <status>archival</status>
+    <contact>Jeffrey Taylor &lt;jeff.taylor@ieee.org&gt;</contact>
+    <categories type="array">
+      <category>bicycle</category>
+    </categories>
+    <key>cycle-nearby</key>
   </project>
   <project>
     <name>Green Map - Interactive Map of Austin's Parks</name>

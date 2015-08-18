@@ -21,17 +21,6 @@
   
   <li>
   
-    <a href="http://cycle-nearby.open-austin.org/">Cycle Nearby Austin</a>
-  
-  &ndash; Location aware map of City of Austin resources and bicycle relate police report.
-  
-    <span class="project-info">[<a href="https://github.com/AustinBlues/Good-Sect--Bad-Sect" class="project-project-at">more info</a>]</span>
-  
-  <span class="project-status project-status-deployed">deployed</span>
-  </li>
-  
-  <li>
-  
     <a href="http://open-austin.github.io/hack-task-aggregator/public/index.html">Hack Task Aggregator</a>
   
   &ndash; Application to aggregate tasks across projects that are identified for &quot;hacking&quot;.
@@ -125,6 +114,17 @@
   &ndash; Connecting people who want to try bicycle commuting with experienced bicycle commuters who want to help. A May 2013 Austin Bike Month initiative.
   
     <span class="project-info">[<a href="https://github.com/chip-rosenthal/bike-buddy" class="project-project-at">more info</a>]</span>
+  
+  <span class="project-status project-status-archival">archival</span>
+  </li>
+  
+  <li>
+  
+    Cycle Nearby Austin
+  
+  &ndash; Location aware map of City of Austin resources and bicycle relate police report.
+  
+    <span class="project-info">[<a href="https://github.com/AustinBlues/Good-Sect--Bad-Sect" class="project-project-at">more info</a>]</span>
   
   <span class="project-status project-status-archival">archival</span>
   </li>

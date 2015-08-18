@@ -1,6 +1,5 @@
 name,description,link_url,code_url,type,categories,tags,status
 Austin Restaurant Scores,Query Austin/Travis County Health Department restaurant inspection scores.,http://atx-restaurant-scores.open-austin.org/,https://github.com/open-austin/atx-restaurant-scores,web application,food safety,"",deployed
-Cycle Nearby Austin,Location aware map of City of Austin resources and bicycle relate police report.,http://cycle-nearby.open-austin.org/,https://github.com/AustinBlues/Good-Sect--Bad-Sect,web application,bicycle,"",deployed
 Hack Task Aggregator,"Application to aggregate tasks across projects that are identified for ""hacking"".",http://open-austin.github.io/hack-task-aggregator/public/index.html,https://github.com/open-austin/hack-task-aggregator,web application,"project management,civic hacking","",deployed
 Instabus,Realtime map of Austin's public transit. Works well on mobile and desktop.,http://instabus.org,https://github.com/luqmaan/instabus,web application,"transit,transportation,bus,train","",deployed
 Vote ATX,Voting place finder for Austin/Travis County elections.,http://voteatx.us/,https://github.com/open-austin/voteatx-app,web application,"elections,politics,voting","",deployed
