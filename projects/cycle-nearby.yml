@@ -1,8 +1,8 @@
 Name: Cycle Nearby Austin
 Description:  Location aware map of City of Austin resources and bicycle relate police report.
-Access_at:  http://cycle-nearby.open-austin.org/
+Access_at:
 Project_at: https://github.com/AustinBlues/Good-Sect--Bad-Sect
 Type: web application
-Status: deployed
+Status: archival
 Contact:  Jeffrey Taylor <jeff.taylor@ieee.org>
 Categories: [ bicycle ]
