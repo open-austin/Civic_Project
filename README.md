@@ -1,6 +1,8 @@
 # Civic Project
 
-This project contains data on civic projects by Open Austin members.
+This project contains data on civic projects by Open Austin members. This is
+inactive, but see the current list on the [projects page of the Open Austin
+website](https://www.open-austin.org/projects/).
 
 ## projects Directory
 
